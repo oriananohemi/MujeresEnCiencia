@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+
+/* ESTILOS GENERALES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============= */
+
+body {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.logoHistory {
+  /* height: 40px; */
+  width: 180px;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  font-size: 1.1rem;
+  min-height: 100px;
+}
+
+/* .nav-link {
+  color: #000;
+} */
+
+.nav-link:hover {
+  color: crimson;
+}
+
+.navbar-toggler {
+  font-size: 35px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.iconoDetails {
+  text-align: center;
+  margin: auto;
+  width: 75px;
+}
+
+.nav-user {
+  color: crimson;
+  display: block;
+  padding-top: 8;
+}
+
+.carousel-item img {
+  height: 500px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: darkmagenta;
+  border-color: darkmagenta;
+}
+
+.btn:hover {
+  background-color: forestgreen;
+  border-color: forestgreen;
+  color: white;
+}
+
+#title {
+  font-family: 'Patua One', cursive;
+}
+
+/* ESTILOS PARA LA SECCION DE IMAGENES */
+
+/* No funciona */
+/* .backgroundB {
+  background-color: black;
+} */
+
+.container-img {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.img {
+  cursor: pointer;
+  height: 600px;
+  transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
+  width: 100%;
+}
+
+.container-img:hover img {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.details-img {
+  background-color: rgba(0, 0, 0, .719);
+  color: #fff;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 100;
+}
