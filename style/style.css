@@ -121,18 +121,47 @@ body {
 }
 
 
-/* ESTILOS DE LA SECTION DEL FORMULARIO */
+/* ESTILOS DE LA SECCION DEL FORMULARIO */
 
 .separation {
   padding-top: 200px;
 }
 
+#buttonForm {
+  background-color: darkmagenta;
+  border-radius: 5px;
+  border: 1px solid darkmagenta;
+  color: #fff;
+  font-size: 20px;
+  transition: all .5s ease;
+  padding: 5px 10px;
+}
+
+#buttonForm:hover {
+  background-color: forestgreen;
+  cursor: pointer;
+  border-color: forestgreen
+}
+
+
+/* ESTILOS DE LA SECCION DEL FOOTER */
 .footer {
   background-color: black;
+  color: #fff;
   margin-top: 200px;
   padding: 90px 0;
 }
 
 .icon {
   width: 50px;
+}
+
+.footer-link:hover {
+  color: crimson;
+  text-decoration: none;
+}
+
+.list-inline,
+.list-inline-item {
+  padding: 5px 10px;
 }
