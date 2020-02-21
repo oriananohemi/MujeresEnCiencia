@@ -92,6 +92,7 @@
       <h2 style="padding: 80px;" class="text-white text-center">
         Characters of History
       </h2>
+      <p class="instruc">Presiona la imagen e ingresa el nombre del personaje</p>
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <div class="container-img">
@@ -133,7 +134,7 @@
       </div>
     </section>
     <section id="contact">
-      <form action="">
+      <form action="" onsubmit="return validarFormulario()">
         <div class="container separation">
           <div class="row">
             <div class="col-md-6 mt-4">
@@ -166,7 +167,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="controlText"></label>
-                    <textarea id="controlText" rows="3" cols="35" class="fomr-control"
+                    <textarea id="message" rows="3" cols="35" class="form-control"
                       placeholder="Ingresa tu comentario"></textarea>
                   </div>
                 </div>
@@ -186,13 +187,13 @@
         <img src="./img/Ciencia_y_tecnologia.png" alt="logo" width="60px">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Home</a>
+            <a href="#" class="footer-link">Home</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Characters</a>
+            <a href="#" class="footer-link">Characters</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Contact</a>
+            <a href="#" class="footer-link">Contact</a>
           </li>
         </ul>
         <ul>
@@ -223,6 +224,7 @@
           </li>
         </ul>
       </div>
+      <small>@2020 All Rights Reserved. Created by <a href="#" class="font-weight-bold">Oriana</a> </small>
     </footer>
     <script>
       document.getElementById('title').classList.add('text-danger')
@@ -230,6 +232,7 @@
     </script>
     <script src="./js/script.js"></script>
     <script src="./js/personajes.js"></script>
+    <script src="./js/validacion.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -84,6 +84,11 @@ body {
 
 /* ESTILOS PARA LA SECCION DE IMAGENES */
 
+.instruc {
+  color: white;
+  font-size: 20px;
+}
+
 .backgroundB {
   background-color: black;
   margin: 20px 0 ;
