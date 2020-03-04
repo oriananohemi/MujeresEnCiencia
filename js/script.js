@@ -1,31 +1,41 @@
 var login1 = document.getElementById('login1')
 var login2 = document.getElementById('login2')
 var loginUser = document.getElementById('loginUser')
+var element1 = document.getElementById('text1')
+var element2 = document.getElementById('text2')
 
-function show() {
-  var element = document.getElementById('text')
-
-  if (element.style.visibility == 'hidden') {
-    element.style.visibility = 'visible'
-  } else {
-    element.style.visibility = 'hidden'
-  }
-
-
+function loggedIn() {
   if (localStorage.getItem('name')) {
     loginUser.innerHTML = localStorage.getItem('name')
+    element1.style.visibility = 'hidden'
+    element2.style.visibility = 'visible'
   }
 }
 
-function ocultar() {
-  var element = document.getElementById('text')
+loggedIn()
 
-  if (element.style.visibility == 'visible') {
-    element.style.visibility = 'hidden'
-  } else {
-    element.style.visibility = 'visible'
-  }
-}
+// function show() {
+
+//   if (element1.style.visibility == 'hidden') {
+//     element2.style.visibility = 'visible'
+//   } else {
+//     element2.style.visibility = 'hidden'
+//   }
+
+
+//   if (localStorage.getItem('name')) {
+//     loginUser.innerHTML = localStorage.getItem('name')
+//   }
+// }
+
+// function ocultar() {
+
+//   if (element2.style.visibility == 'visible') {
+//     element1.style.visibility = 'hidden'
+//   } else {
+//     element1.style.visibility = 'visible'
+//   }
+// }
 
 // La propiedad de solo lectura localStorage te permite acceder al objeto localStorage
 // los datos persisten almacenados entre las diferentes sesiones de navegacion
@@ -64,9 +74,15 @@ login1.onclick = function iniciarSesion() {
 
   loginUser.innerHTML = user
 
+  element1.style.visibility = 'hidden'
+  element2.style.visibility = 'visible'
 }
 
 login2.onclick = function cerrarSesion() {
   loginUser.innerHTML = ''
   localStorage.clear()
+
+  element1.style.visibility = 'visible'
+  element2.style.visibility = 'hidden'
+
 }
